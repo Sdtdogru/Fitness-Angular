@@ -1,12 +1,13 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {UsersaveComponent} from './usersave.component';
+import {MotherComponent} from './mother.component';
+
 
 
 const routes: Routes = [
   {
     path: '',
-    component: UsersaveComponent
+    component: MotherComponent
   }
 ];
 
@@ -14,4 +15,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class UsersaveRoutingModule { }
+export class MotherRoutingModule { }
