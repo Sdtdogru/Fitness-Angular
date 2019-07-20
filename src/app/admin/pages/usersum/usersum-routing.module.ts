@@ -1,13 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { UsersumComponent } from './usersum.component';
+import {RouterModule, Routes} from '@angular/router';
+import {UsersumComponent} from './usersum.component';
+import {NgModule} from '@angular/core';
 
-
+const routes: Routes = [
+  {
+    path: '',
+    component: UsersumComponent
+  }
+];
 
 @NgModule({
-  declarations: [UsersumComponent],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
 })
-export class UsersumModule { }
+export class UsersumRoutingModule { }
